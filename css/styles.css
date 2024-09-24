@@ -61,7 +61,14 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+
 }
+
+#section-contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
 
 input,
 textarea,
