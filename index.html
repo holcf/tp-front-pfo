@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de contacto de Federico Holc, desarrollador web.">
+
+  <title>Contactame - Federico Holc</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <header class="text-center">
+    <h1>¡Hola! =)</h1>
+    <p>Podés contactarme vía: </p>
+  </header>
+
+  <main>
+    <section aria-labelledby="contact-links">
+
+      <!-- Este texto no se va a mostrar en pantalla pero sirve para que sea accessible mediante screen readers  -->
+      <h2 class="visually-hidden">Enlaces de contacto</h2>
+
+      <table class="links-table">
+        <tr>
+          <td id="link1" class="link">&gt;
+            <a target="_blank" rel="noopener noreferrer" aria-label="Github"
+              href="https://www.github.com/fedeholc/">Github</a>
+          </td>
+        </tr>
+        <tr>
+          <td id="link2" class="link">&gt;
+            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+              href="https://linkedin.com/in/federicoholc/">LinkedIn</a>
+          </td>
+        </tr>
+        <tr>
+          <td id="link3" class="link">&gt;
+            <a target="_blank" rel="noopener noreferrer" aria-label="E-Mail"
+              href="mailto:federicoholc@gmail.com">E-Mail</a>
+          </td>
+          </td>
+        </tr>
+        <tr>
+          <!-- Para mejorar: cuando utilicemos javascript, hacer que se pueda escribir como si fuera el prompt de una terminal -->
+          <td class="prompt">
+            <span class="terminal-input">$</span>
+            <span class="cursor">_</span>
+            <span id="link-text1" class="hidden">Github</span>
+            <span id="link-text2" class="hidden">LinkedIn</span>
+            <span id="link-text3" class="hidden">E-Mail</span>
+          </td>
+        </tr>
+      </table>
+      <img id="photo" loading="lazy" alt="Foto de Federico Holc en duotono verde y negro" src="./fede.webp">
+    </section>
+
+    <br>
+
+    <section aria-labelledby="contact-form">
+      <h2 class="text-center ">O dejarme un mensaje aquí:</h2>
+      <!-- Por ahora el formulario no hace nada -->
+      <form id="contact-form" action="#" method="post">
+        <div class="form-inputs">
+          <!-- Por una cuestión de diseño no hay etiquetas label, 
+           pero puse las aria label para que se garantize la accesibilidad -->
+          <input id="nombre" type="text" class="form-element" placeholder="Nombre" aria-label="Nombre" required />
+
+          <input id="apellido" type="text" class="form-element" placeholder="Apellido" aria-label="Apellido" required />
+
+          <input id="email" type="email" class="form-element" placeholder="Correo Electrónico"
+            aria-label="Correo Electrónico" required />
+
+          <input id="telefono" type="text" class="form-element" placeholder="Teléfono" aria-label="Teléfono" />
+
+          <textarea id="mensaje" class="form-element" placeholder="Mensaje" aria-label="Mensaje" required></textarea>
+
+        </div>
+        <button type="submit" class="">enviar</button>
+      </form>
+    </section>
+
+  </main>
+  <footer>* * *</footer>
+</body>
+
+</html>

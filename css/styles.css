@@ -1,0 +1,247 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+}
+
+:root {
+  /* colores de la paleta CGA */
+  --cga-black: #000000;
+  --cga-blue: #0000AA;
+  --cga-green: #00AA00;
+  --cga-cyan: #00AAAA;
+  --cga-red: #AA0000;
+  --cga-magenta: #AA00AA;
+  --cga-brown: #AA5500;
+  --cga-light-gray: #AAAAAA;
+  --cga-dark-gray: #555555;
+  --cga-light-blue: #5555FF;
+  --cga-light-green: #55FF55;
+  --cga-light-cyan: #55FFFF;
+  --cga-light-red: #FF5555;
+  --cga-light-magenta: #FF55FF;
+  --cga-yellow: #FFFF55;
+  --cga-white: #FFFFFF;
+
+  /* colores de la paleta terminal */
+  --terminal-ambar: #ffb700;
+  --terminal-green: #00ff00;
+  --terminal-dark-green: #006b00;
+  --terminal-darkest-green: #001500;
+
+  --terminal-text-shadow: 0 0 3px var(--terminal-dark-green), 0 0 5px var(--terminal-green);
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'vt220';
+  src: url('../fonts/vt220.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+  font-family: 'vt220', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  color: var(--terminal-green);
+  text-shadow: var(--terminal-text-shadow);
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+h1 {
+  font-size: 4rem;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+a {
+  color: var(--terminal-green);
+  text-decoration: none;
+}
+
+footer {
+  margin: 2rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.links-table {
+  border: 2px solid var(--terminal-darkest-green);
+  padding: 1rem 2rem 1rem 2rem;
+
+  & TD {
+    display: inline;
+  }
+}
+
+#photo {
+  height: 200px;
+  width: 200px;
+}
+
+#contact-form {
+  border: 2px solid var(--terminal-darkest-green);
+  padding: 2rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  & textarea {
+    grid-column: span 2;
+  }
+
+  & .form-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  & button {
+    padding: 0.25rem 1rem;
+    border-radius: 5px;
+    color: var(--terminal-green);
+    border: 2px solid var(--cga-green);
+    background-color: #000;
+    box-shadow: var(--terminal-text-shadow);
+    width: fit-content;
+    align-self: center;
+  }
+
+  & button:hover {
+    border: 2px solid var(--terminal-green);
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 14px 0px var(--terminal-dark-green);
+  }
+}
+
+.form-element {
+  background-color: var(--terminal-darkest-green);
+  padding: 0.5rem;
+  font-size: 2rem;
+  caret-color: var(--terminal-green);
+  color: var(--terminal-green);
+  border: none;
+  border-bottom: 2px solid var(--cga-green);
+  border-radius: 3px;
+}
+
+.form-element:focus {
+  outline: 2px solid var(--cga-light-green);
+  border-bottom: 2px solid transparent;
+}
+
+.form-element::placeholder {
+  color: var(--terminal-dark-green);
+}
+
+
+.cursor {
+  animation: blink 1s step-end infinite;
+}
+
+.link {
+  cursor: pointer;
+}
+
+body:has(.link:hover) .cursor {
+  display: none;
+}
+
+body:has(#link1:hover) #link-text1 {
+  display: inline;
+}
+
+body:has(#link2:hover) #link-text2 {
+  display: inline;
+}
+
+body:has(#link3:hover) #link-text3 {
+  display: inline;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  #contact-form {
+    & .form-inputs {
+      grid-template-columns: 1fr;
+    }
+
+    & .form-inputs input {
+      grid-column: span 1;
+    }
+
+    & textarea {
+      grid-column: span 1;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 12px;
+  }
+}
