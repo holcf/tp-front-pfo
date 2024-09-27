@@ -247,11 +247,28 @@ body:has(#link3:hover) #link-text3 {
 
 /*
 - - - - - - - - - - - - - - - - - - - 
-- Imágen del gato sobre el header 
+- Header 
 - - - - - - - - - - - - - - - - - - -
 */
 header {
   position: relative;
+}
+
+header>a {
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: 3px dashed var(--terminal-dark-green);
+}
+
+header>a:hover {
+  border: 3px solid var(--terminal-dark-green);
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 14px 0px var(--terminal-dark-green);
+}
+
+header p:last-of-type {
+  margin-top: 4rem;
 }
 
 #cat {
