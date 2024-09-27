@@ -31,7 +31,7 @@
   --terminal-darkest-green: #001500;
 
   --terminal-text-shadow: 0 0 3px var(--terminal-dark-green), 0 0 5px var(--terminal-green);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 @font-face {
@@ -70,13 +70,9 @@ section {
   display: flex;
   flex-direction: column;
 
-  button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-  }
+
 }
+
 
 
 input,
@@ -154,24 +150,29 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+}
 
-  & button {
-    padding: 0.25rem 1rem;
-    border-radius: 5px;
-    color: var(--terminal-green);
-    border: 2px solid var(--cga-green);
-    background-color: #000;
-    box-shadow: var(--terminal-text-shadow);
-    width: fit-content;
-    align-self: center;
-  }
+#contact-form>button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
 
-  & button:hover {
-    border: 2px solid var(--terminal-green);
-    font-weight: 900;
-    cursor: pointer;
-    box-shadow: inset 0px 0px 14px 0px var(--terminal-dark-green);
-  }
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  color: var(--terminal-green);
+  border: 2px solid var(--cga-green);
+  background-color: #000;
+  box-shadow: var(--terminal-text-shadow);
+  width: fit-content;
+  align-self: center;
+}
+
+#contact-form>button:hover {
+  border: 2px solid var(--terminal-green);
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 14px 0px var(--terminal-dark-green);
 }
 
 .form-element {
@@ -239,7 +240,17 @@ body:has(#link3:hover) #link-text3 {
   text-align: center;
 }
 
+
+@media screen and (max-width: 1080px) {
+  :root {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  :root {
+    font-size: 0.9rem;
+  }
 
   #contact-form {
     & .form-inputs {
@@ -258,6 +269,12 @@ body:has(#link3:hover) #link-text3 {
 
 @media screen and (max-width: 480px) {
   :root {
-    font-size: 12px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 375) {
+  :root {
+    font-size: 0.7rem;
   }
 }
