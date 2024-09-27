@@ -4,8 +4,7 @@ Mejora de contenido
 • Tomen ideas de otros portfolios y amplíen su contenido en general. Este porfolio será su carta de presentación al internet y será lo que vean los reclutadores a la hora de ver y examinar sus perfiles. Cuanto más profesional y completo, más chances de destacar.
 
 Mejora de estilos
- 
- 
+
  • Uso de iconos: Usando font-awesome o la fuente que se prefiera. No hace falta saturar todo de íconos pero estaría bien tener un par, por ejemplo en el botón enviar del formulario, etc.
 • Manejo de enlaces con pseudoclases: Se pueden eliminar sus estilos, pero deberían tratarse con a:link, a:visited, a:hover, a:active .
 • Usar una lista para el nav : Usaremos dentro de nuestro contenedor nav una lista que mostraremos horizontalmente y que dejaremos a nuestro gusto, no se olviden usar list-style-type si quieren sacar los caracteres de lista.
