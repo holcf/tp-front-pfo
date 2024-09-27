@@ -71,20 +71,24 @@
     <section id="section-contact-form" aria-labelledby="contact-form">
       <h2 class="text-center ">O dejarme un mensaje aquí:</h2>
       <!-- Por ahora el formulario no hace nada -->
-      <form id="contact-form" action="#" method="post">
+      <form id="contact-form" action="https://formspree.io/f/xnnaeppg" method="POST">
         <div class="form-inputs">
           <!-- Por una cuestión de diseño no hay etiquetas label, 
            pero puse las aria label para que se garantize la accesibilidad -->
-          <input id="nombre" type="text" class="form-element" placeholder="Nombre" aria-label="Nombre" required />
+          <input id="nombre" name="nombre" type="text" class="form-element" placeholder="Nombre" aria-label="Nombre"
+            required />
 
-          <input id="apellido" type="text" class="form-element" placeholder="Apellido" aria-label="Apellido" required />
+          <input id="apellido" name="apellido" type="text" class="form-element" placeholder="Apellido"
+            aria-label="Apellido" required />
 
-          <input id="email" type="email" class="form-element" placeholder="Correo Electrónico"
+          <input id="email" name="email" type="email" class="form-element" placeholder="Correo Electrónico"
             aria-label="Correo Electrónico" required autocomplete="email" />
 
-          <input id="telefono" type="text" class="form-element" placeholder="Teléfono" aria-label="Teléfono" />
+          <input id="telefono" name="telefno" type="text" class="form-element" placeholder="Teléfono"
+            aria-label="Teléfono" />
 
-          <textarea id="mensaje" class="form-element" placeholder="Mensaje" aria-label="Mensaje" required></textarea>
+          <textarea id="mensaje" name="mensaje" class="form-element" placeholder="Mensaje" aria-label="Mensaje"
+            required></textarea>
 
         </div>
 
@@ -95,7 +99,7 @@
 
   </main>
   <div class="separador">* * * </div>
-  
+
   <section id="lado-b">
     <img src="./assets/cat.webp" alt="imagen de un gato negro">
 
