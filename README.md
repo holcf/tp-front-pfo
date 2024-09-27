@@ -21,3 +21,7 @@ de lo contrario no se cargará el archivo TTF con la fuente.
 ## Fuente
 
 La fuente utilizada es [GlassTTY: TrueType VT220](https://github.com/svofski/glasstty)
+
+## Muestra de como se ve la pagina web
+
+![Contactame](./assets/screenshot.webp)
