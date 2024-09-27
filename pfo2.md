@@ -4,13 +4,9 @@ Mejora de contenido
 • Tomen ideas de otros portfolios y amplíen su contenido en general. Este porfolio será su carta de presentación al internet y será lo que vean los reclutadores a la hora de ver y examinar sus perfiles. Cuanto más profesional y completo, más chances de destacar.
 
 Mejora de estilos
-• Manejo de tamaños en los contenedores. Deberán usar unidades relativas % , flex o vw para sus contenedores padre principales en el width y unidades como px o vh en el height, si es que trabajan con height. El uso de Flex soluciona mucho estos problemas del espaciado y el posicionamiento. Usen flex.
-• Se valorará muy positivamente el correcto manejo de elementos en bloque y elementos en línea.
-Deben conocerlos bien para luego poder posicionar toda su página. No usen más saltos de línea como <br> .
-• Buen conocimiento de box model Deberán poder manejarse cómodamente con márgenes, bordes y padding. Deberán mostrar su conocimiento para acomodar su contenido y su espaciado en el documento.
-• Centrado de elementos: Con text-align para textos, y margin: 0 auto; o flex .
-• Manejo de fuentes: Agregado de un font-family propio, descargado o de fonts google y un fontsize que emplee unidades relativas en versión mobile.
-• Uso de iconos: Usando font-awesome o la fuente que se prefiera. No hace falta saturar todo de íconos pero estaría bien tener un par, por ejemplo en el botón enviar del formulario, etc.
+ 
+ 
+ • Uso de iconos: Usando font-awesome o la fuente que se prefiera. No hace falta saturar todo de íconos pero estaría bien tener un par, por ejemplo en el botón enviar del formulario, etc.
 • Manejo de enlaces con pseudoclases: Se pueden eliminar sus estilos, pero deberían tratarse con a:link, a:visited, a:hover, a:active .
 • Usar una lista para el nav : Usaremos dentro de nuestro contenedor nav una lista que mostraremos horizontalmente y que dejaremos a nuestro gusto, no se olviden usar list-style-type si quieren sacar los caracteres de lista.
 • Mejorar el estilado de nuestra tabla: Esta deberá mostrar una personalización más allá del estilo por defecto. También deberán usar la siguiente pseudoclase para darle un estilo al fondo de cada fila:
