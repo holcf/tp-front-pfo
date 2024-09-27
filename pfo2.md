@@ -5,7 +5,6 @@ Mejora de contenido
 
 Mejora de estilos
 
- 
 • Usar una lista para el nav : Usaremos dentro de nuestro contenedor nav una lista que mostraremos horizontalmente y que dejaremos a nuestro gusto, no se olviden usar list-style-type si quieren sacar los caracteres de lista.
 • Mejorar el estilado de nuestra tabla: Esta deberá mostrar una personalización más allá del estilo por defecto. También deberán usar la siguiente pseudoclase para darle un estilo al fondo de cada fila:
 /_ Filas pares _/
@@ -15,19 +14,6 @@ tr:nth-child(odd) {}
 Ahora que van a incluír una descripción mayor en su web, la tabla simplemente puede listar las tecnologías
 que manejan o que pueden llegar a manejar.
 • Uso de z-index: Con un uso es suficiente, deben mostrar su conocimiento del z-index en donde ustedes consideren, como ubicar un texto encima de un contenedor.
-• Uso de combinadores CSS: Usen en su código varios, combinador desdenciente: div p {} y combinador directo: div > p . De esta manera se podrán evitar usar en exceso ids y clases.
-• Manejo de opacidad: Deben mostrar el uso de opacidad en algún elemento de su portafolio. Este puede usarse, por ejemplo, para oscurecer algún fondo y resaltar el texto.
-
-Responsividad
-Deberán hacer que su página sea responsiva y recolocar los elementos acorde al tamaño de la pantalla. Su proyecto debe llevar 4 tamaños máximos de pantalla.
-/_ Tablet horizontal _/
-@media (max-width: 1080px) { }
-/_ Tablet vertical _/
-@media (max-width: 768px) { }
-/_ Mobil 1 _/
-@media (max-width: 480px) { }
-/_ Mobil 2 _/
-@media (max-width: 375px) { }
 
 Recordatorios
 
@@ -35,7 +21,7 @@ Recordatorios
 vayan a poner una ruta, fijense desde que carpeta están, si en la raíz o en una carpeta superior y naveguen desde ese lugar.
 • Recuerden tener un código limpio, bien comentado y bien indentado. Debe ser limpio, claro y fácil de entender. Separen los distintos bloques de su CSS con caracteres bien distinguidos como por ejemplo:
 /_///////////////// AJUSTES GENERALES//////////////////_/
-/_**\*\*\*\***\_\_**\*\*\*\***Portada****\*\*\*\*****\_\_\_\_****\*\*\*\*****_/
+/_**\*\*\*\***\_\_**\*\*\*\***Portada\***\*\*\*\*\*\*\***\_\_\_\_\***\*\*\*\*\*\*\***_/
 • Incluyan en un archivo README.md donde hagan una pequeña descripción de su proyecto usen # para el título. Este se puede crear por defecto cuando se crea un nuevo repositorio en github.
 • No es obligatorio, pero se valorará también incluír una imagen de muestra en nuestro README, este puede ser una captura de pantalla de nuestra web, por ejemplo, sample.png y se puede enlazar en nuestro README como <img src="assets/img/sample.png" alt="porfolio>"
 
