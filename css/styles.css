@@ -156,7 +156,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 
   padding: 0.25rem 1rem;
   border-radius: 5px;
@@ -252,7 +252,7 @@ header {
 #cat {
   position: absolute;
   z-index: -1;
-  text-align: center;
+  filter: drop-shadow(0 0 25px rgba(43, 255, 0, 0.3));
   right: 3.6rem;
   top: -1rem;
 }
@@ -265,7 +265,6 @@ header {
   #cat {
     right: 3.7rem;
     top: -1rem;
-    filter: drop-shadow(0 0 25px rgba(43, 255, 0, 0.3));
   }
 
   @media screen and (max-width: 768px) {
@@ -311,3 +310,4 @@ header {
 
 
   }
+}
