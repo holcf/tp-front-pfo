@@ -13,7 +13,7 @@ tr:nth-child(even) {}
 tr:nth-child(odd) {}
 Ahora que van a incluír una descripción mayor en su web, la tabla simplemente puede listar las tecnologías
 que manejan o que pueden llegar a manejar.
-• Uso de z-index: Con un uso es suficiente, deben mostrar su conocimiento del z-index en donde ustedes consideren, como ubicar un texto encima de un contenedor.
+ 
 
 Recordatorios
 

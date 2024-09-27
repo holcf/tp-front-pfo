@@ -1,9 +1,8 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-
-}
+/*
+- - - - - - - - - - - - - - - - - - - 
+- Variables
+- - - - - - - - - - - - - - - - - - -
+*/
 
 :root {
   /* colores de la paleta CGA */
@@ -31,7 +30,21 @@
   --terminal-darkest-green: #001500;
 
   --terminal-text-shadow: 0 0 3px var(--terminal-dark-green), 0 0 5px var(--terminal-green);
+
   font-size: 1rem;
+}
+
+
+/*
+- - - - - - - - - - - - - - - - - - - 
+- Ajustes generales
+- - - - - - - - - - - - - - - - - - -
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -62,18 +75,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-
 }
-
-#section-contact-form {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-
-
-}
-
-
 
 input,
 textarea,
@@ -107,18 +109,12 @@ footer {
   margin: 2rem;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
 
+/*
+- - - - - - - - - - - - - - - - - - - 
+- Sección de enlaces
+- - - - - - - - - - - - - - - - - - -
+*/
 .links-table {
   border: 2px solid var(--terminal-darkest-green);
   padding: 1rem 2rem 1rem 2rem;
@@ -131,6 +127,17 @@ footer {
 #photo {
   height: 200px;
   width: 200px;
+}
+
+/*
+- - - - - - - - - - - - - - - - - - - 
+- Sección de contacto
+- - - - - - - - - - - - - - - - - - -
+*/
+#section-contact-form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 #contact-form {
@@ -196,6 +203,11 @@ footer {
 }
 
 
+/*
+- - - - - - - - - - - - - - - - - - - 
+- Sección de enlaces 
+- - - - - - - - - - - - - - - - - - -
+*/
 .cursor {
   animation: blink 1s step-end infinite;
 }
@@ -232,21 +244,19 @@ body:has(#link3:hover) #link-text3 {
   }
 }
 
-.hidden {
-  display: none;
-}
 
-.text-center {
-  text-align: center;
+/*
+- - - - - - - - - - - - - - - - - - - 
+- Imágen del gato sobre el header 
+- - - - - - - - - - - - - - - - - - -
+*/
+header {
+  position: relative;
 }
 
 #cat {
   position: absolute;
   z-index: -1;
-}
-
-header {
-  position: relative;
 }
 
 #cat {
@@ -257,6 +267,37 @@ header {
   top: -1rem;
 }
 
+
+/*
+- - - - - - - - - - - - - - - - - - - 
+- Utility Classes
+- - - - - - - - - - - - - - - - - - -
+*/
+.hidden {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*
+- - - - - - - - - - - - - - - - - - - 
+- Media Queries 
+- - - - - - - - - - - - - - - - - - -
+*/
 @media screen and (max-width: 1080px) {
   :root {
     font-size: 1rem;
